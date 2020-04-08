@@ -1,0 +1,420 @@
+/* Index.html */
+
+@media (max-width: 1250px){
+	.wrap{
+		width: 90%;
+		margin: 0px auto;
+	}
+	#menu img{
+		left: 8%;
+	}
+
+	.typejs{
+		width: 50%;
+	}
+	.separator{
+		width: 100%;
+	}
+	.bx-wrapper, .bx-viewport{
+		width: 45%;
+	}
+	#texto-p h2{
+		font-size: 38px;
+	}
+	#texto-p .separator{
+		width: 90%;
+	}
+	#texto-p p{
+		font-size: 15px;
+	}
+	#texto-p a{
+		margin-right: 25%;
+	}
+
+	/*CONTACTO*/
+	#contacto{
+		width: 40%;
+	}
+	#sidebar{
+		width: 43%;
+		margin-top: 50px;
+	}
+	#sidebar #icono-email span{
+		margin-left: 160px;
+	}
+}
+
+@media (max-width: 1090px){
+	#logo img{
+		width: 325%;
+		height: 92px;
+	}
+	#menu ul li{;
+		margin: 0px 18px 0px 10px;
+	}
+
+	.bx-wrapper, .bx-viewport{
+		margin-top: 55px !important;
+		width: 45%;
+	}
+	.bx-wrapper, .bx-viewport img{
+		height: auto;
+		padding-bottom: 50px;
+	}
+	#texto-p p{
+		margin-top: -14px;
+		font-size: 14px;
+	}
+	#texto-p a{
+		margin-right: 10%;
+	}
+
+	/*CONTACTO*/
+	#contacto{
+		width: 36%;
+	}
+	#sidebar{
+		width: 44%;
+		margin-top: 50px;
+	}
+	#sidebar #icono-email span{
+		margin-left: 140px;
+	}
+	#redes-sociales ul li{
+		margin: 10px -25px;
+	}
+}
+
+@media (max-width: 960px){
+	#menu img{
+		left: 6%;
+		top: 20px;
+	}
+	#menu ul li a{
+		font-size: 17px;
+	}
+
+	.typejs{
+		width: 70%;
+	}
+	#menu ul li{
+		margin: 0px 10px 0px 10px;
+	}
+	.bx-wrapper, .bx-viewport{
+		width: 42%;
+	}
+
+	/*CONTACTO*/
+	#contacto{
+		width: 36%;
+	}
+	#sidebar{
+		width: 40%;
+		margin-top: 50px;
+	}
+	#sidebar #icono-email span{
+		margin-left: 100px;
+	}
+	#redes-sociales ul li{
+		margin: 10px -59px;
+	}
+}
+
+@media (max-width: 885px){
+	label #btn{
+		display: block;
+	}
+	#ul{
+		position: fixed;
+		width: 36%;
+		height: 100vh;
+		background: #34495e;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+		z-index: 1111;
+	}
+	#menu h2{
+		display: block;
+		font-family: sans-serif;
+		margin-top: 10px;
+		color: white;
+		border-bottom: 2px solid rgba(255, 255, 255, .1);
+	}
+	#menu ul li{
+		display: block;
+		margin: 25px 0;
+		line-height: 70px;
+	}
+	#menu ul li a{
+		font-size: 20px;
+		border-bottom: 1px solid rgba(255, 255, 255, .1);
+	}
+	#menu .lala{
+		display: inline-block;
+		margin-right: 10px;
+	}
+	#check:checked ~ ul{
+		left: 0;
+		z-index: 1111;
+	}
+	#check:checked ~ label #btn{
+		display: none;
+	}
+	#check:checked ~ label #cancel{
+		display: block;
+	}
+
+	.typejs{
+		width: 75%;
+	}
+	#texto-p h2{
+		font-size: 33px;
+	}
+	#texto-p p{
+		font-size: 17px;
+		line-height: 18px;
+	}
+	#texto-p .mano{
+		font-size: 40px;
+		padding-left: 5px;
+	}
+	#texto-p a{
+		font-size: 10px;
+		height: 15px;
+		margin-top: 15px;
+	}
+
+	/*CONTACTO*/
+	#contacto{
+		width: 36%;
+	}
+	#form-contacto label{
+		width: 180%;
+		text-align: center;
+	}
+	form input[type="text"],
+	form input[type="password"],
+	form input[type="email"],
+	form input[type="number"],
+	select,
+	textarea{
+		width: 190%;
+	}
+	#hdp{
+		width: 106%;
+	}
+	#sidebar{
+		width: 40%;
+		margin-top: 50px;
+	}
+	#sidebar #icono-email span{
+		margin-left: 100px;
+	}
+	#redes-sociales ul li{
+		margin: 10px -59px;
+	}
+}
+
+@media (max-width: 800px){
+	.typejs{
+		width: 80%;
+	}
+	#texto-p{
+		width: 40%;
+		padding: 15px;
+	}
+	.presentacion{
+		height: 386px;
+		margin-top: 120px;
+	}
+	#texto-p h2{
+		font-size: 21px;
+	}
+	#texto-p p{
+		font-size: 16px;
+		line-height: 18px;
+	}
+	#texto-p a{
+		font-size: 7px;
+		height: 15px;
+		margin-top: 15px;
+	}
+	.mano{display: none;}
+}
+
+@media (max-width: 750px){
+	.typejs{
+		width: 85%;
+	}
+	#fondo{
+		height: 470px;
+	}
+	.presentacion{
+		margin-top: 30px;
+	}
+	/*PORTAFOLIO RESPONSIVE*/
+	.grid .item{
+		width: calc(50% - 20px);
+	}
+	#barra-busqueda{
+		width: 100%;
+		margin-left: -75px;
+	}
+
+	/*CONTACTO*/
+	#contacto{
+		width: 43%;
+		margin-left: 0px;
+	}
+	#sidebar{
+		width: 25%;
+		margin-top: 116px;
+	}
+	#sidebar #icono-email span{
+		margin-left: -40px;
+	}
+	#redes-sociales ul li {
+    	margin: 10px -190px;
+	}
+	#sidebar p{
+		margin-left: -100px;
+		font-size: 14px;
+	}
+	#sidebar h2{
+		margin-left: -100px;
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 670px){
+	.typejs{
+		width: 90%;
+	}
+	.bx-wrapper, .bx-viewport{
+		width: 40%;
+	}
+	#texto-p h2{
+		font-size: 20px;
+	}
+	#texto-p p{
+		font-size: 12px;
+		line-height: 17px;
+	}
+	#texto-p a{
+		font-size: 7px;
+		height: 15px;
+		margin-top: 1px;
+	}
+	.typejs{
+		width: 80%;
+	}
+	.mano{display: none;}
+}
+
+@media (max-width: 590px){
+	.typejs{
+		width: 90%;
+	}
+
+	/*CONTACTO*/
+	#contacto{
+		width: 75%;
+		margin: 40px;
+	}
+	#sidebar{
+		width: 75%;
+	}
+	#sidebar p{
+		font-size: 20px;
+		margin-left: -124px;
+	}
+	#sidebar h2{
+		font-size: 25px;
+		margin-left: -142px;
+	}
+	#sidebar #icono-email span{
+		margin-left: 60px;
+	}
+	#redes-sociales ul li {
+    	margin: 10px -100px;
+	}
+}
+
+@media (max-width: 520px){
+	#ul{
+		width: 80%;
+	}
+	.wrap{
+		width: 100%;
+	}
+	.typejs{
+		width: 90%;
+		height: 165px;
+	}
+	.typejs .teclado{
+		font-size: 55px;
+	}
+	.typejs h2{
+		font-size: 20px;
+	}
+	#texto-p h2{
+		font-size: 19px;
+	}
+	#texto-p p{
+		font-size: 14px;
+		line-height: 12px;
+	}
+
+	/*PORTAFOLIO RESPONSIVE*/
+	.grid .item img{
+		min-height: 150px;
+	}
+	#sidebar p{
+		font-size: 20px;
+		margin-left: -75px;
+	}
+	#sidebar h2{
+		font-size: 25px;
+		margin-left: -80px;
+	}
+}
+
+@media (max-width: 400px){
+	.typejs{
+		width: 95%;
+	}
+	#texto-p h2{
+		font-size: 18px;
+	}
+	#texto-p p{
+		font-size: 12px;
+		line-height: 10px;
+	}
+	#texto-p a{
+		font-size: 7px;
+		height: 15px;
+		margin-top: 15px;
+	}
+}
+
+@media (max-width: 360px){
+	#menu img{
+		width: 200px;
+	}
+	#texto-p h2{
+	font-size: 15px;
+	}
+	#texto-p p{
+		font-size: 12px;
+		line-height: 10px;
+	}
+	/*CONTACTO*/
+	#sidebar #icono-email span{
+		margin-left: 20px;
+	}
+	#redes-sociales ul li{
+		margin: 10px -139px;
+	}
+}

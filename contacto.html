@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no" />
+	<title>Brayan Ruiz | Creacion y Diseño de Paginas Web</title>
+	<!-- Estilos CSS -->
+	<link rel="icon" type="favicon/x-icon" href="./img/logo-pestaña.jpg" />
+	<link rel="stylesheet" type="text/css" href="./css/styles.css">
+	<script src="https://kit.fontawesome.com/abdf98a5ec.js" crossorigin="anonymous"></script>
+
+	<!-- Responsive -->
+	<link rel="stylesheet" type="text/css" href="./css/responsive.css">
+
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="js/jquery-ui-1.12.1/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="js/jquery-ui-1.12.1/jquery-ui.structure.css">
+	<link rel="stylesheet" type="text/css" href="js/jquery-ui-1.12.1/jquery-ui.theme.css">
+	<script type="text/javascript" src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+
+	<!-- Plugin validacion -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+</head>
+<body>
+	<!-- Inicio Cabecera -->
+	<nav id="menu">
+		<input type="checkbox" id="check">
+		<label for="check">
+			<i class="fas fa-bars" id="btn"></i>
+			<i class="fas fa-times" id="cancel"></i>
+		</label>
+		<img src="./img/logo-principal.jpg">
+		<ul id="ul">
+			<h2>MENÚ</h2>
+			<li><a href="index.html"><i class="lala fas fa-home"></i>INICIO</a></li>
+			<li><a href="#"><i class="lala fas fa-address-card"></i>SOBRE MI</a></li>
+			<li><a href="#"><i class="lala fas fa-dollar-sign"></i>PRECIOS</a></li>
+			<li><a href="portafolio.html"><i class="lala fas fa-images"></i>PORTAFOLIO</a></li>
+			<li><a href="contacto.html"><i class="lala fas fa-phone-square-alt"></i>CONTACTO</a></li>
+		</ul>
+	</nav>
+	<!--Fin cabecera-->
+
+	<div class="boton-inicio">
+		<button class="switch" id="switch">
+			<span><i class="fas fa-sun"></i></span>
+			<span><i class="fas fa-moon"></i></span>
+		</button>
+	</div>
+
+	<!-- Inicio contacto -->
+	<section class="wrap">
+		<div id="contacto">
+			<h2>Contacto</h2>
+			<p>LOS CAMPOS MARCADOS CON UN * SON REQUERIDOS</p>
+
+			<form action="" method="POST" id="form-contacto">
+				<label for="name">
+					<span class="asterisco">*</span> Nombre Completo
+				</label>
+				<input type="text" name="name" data-validation="required alphanumeric">
+
+				<label>
+					<span class="asterisco">*</span> Email
+				</label>
+				<input type="email" name="email" data-validation="required email">
+
+				<label for="date">
+					<span class="asterisco">*</span> Fecha de Nacimiento
+				</label>
+				<input type="text" name="date" data-validation="date" data-validation-format="dd/mm/yyyy">
+
+				<label for="tel">
+					<span class="asterisco">*</span> Número telefonico
+				</label>
+				<input type="number" name="tel" data-validation="required number">
+
+				<label for="text-area">
+					<span class="asterisco">*</span> Descripcion del problema o solicitud.
+				</label>
+				<textarea id="texto" cols="30" rows="10" data-validation="required alphanumeric"></textarea>
+
+				<label for="spam">
+					<span class="asterisco">*</span> [Anti-Spam] ¿Cuanto es 18+9?
+					<input id="hdp" type="number" name="anti-spam" data-validation="required number">
+				</label>
+
+				<input type="submit" value="ENVIAR">
+			</form>
+		</div>
+
+		<aside id="sidebar">
+			<div id="icono-email">
+				<span>
+					<i class="fa fa-envelope"></i>
+				</span>
+			</div>
+
+				<p>Mail de contacto</p>
+				<h2 class="correo">brayanruizweb@gmail.com</h2>
+				<br>
+				<h2 class="texto-red">Mis redes sociales</h2>
+
+			<div id="redes-sociales">
+				<ul>
+					<li class="facebook">
+						<a href="#">
+							<i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+						</a>
+					</li>
+
+					<li class="twitter">
+						<a href="#">
+							<i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+						</a>
+					</li>
+
+					<li class="instagram">
+						<a href="#">
+							<i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+						</a>
+					</li>
+
+					<li class="google">
+						<a href="#">
+							<i class="fa fa-google fa-2x" aria-hidden="true"></i>
+						</a>
+					</li>
+
+					<li class="whatsapp">
+						<a href="#">
+							<i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</aside>
+	</section>
+
+	<div class="clearfix"></div>
+	<div class="wrap">
+		<a href="#" class="scroll-top">
+			<span class="fa fa-angle-up"></span>
+		</a>
+	</div>
+
+	<footer id="footer">
+		<p>&copy; Copyright 2020 - Desarrollado por Brayan Ruiz.</p>
+	</footer>
+
+
+	<!-- Scripts -->
+	<script type="text/javascript" src="./js/contacto.js"></script>
+</body>
+</html>
