@@ -134,6 +134,7 @@
 		text-align: center;
 		transition: all .5s;
 		z-index: 1111;
+		overflow: scroll;
 	}
 	#menu h2{
 		display: block;
