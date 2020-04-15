@@ -417,12 +417,11 @@
 		margin-top: 15px;
 	}
 	/*SOBRE MI*/
-	/*SOBRE MI*/
 	.card{
-		margin-left: -30px;
+		margin-left: -5px;
 	}
 	.titulo-about{
-		margin-left: -20px;
+		margin-left: -7px;
 	}
 }
 
@@ -439,10 +438,10 @@
 	}
 	/*SOBRE MI*/
 	.card{
-		margin-left: -47px;
+		margin-left: -7px;
 	}
 	.titulo-about{
-		margin-left: -40px;
+		margin-left: -10px;
 	}
 	/*CONTACTO*/
 	#sidebar #icono-email span{
