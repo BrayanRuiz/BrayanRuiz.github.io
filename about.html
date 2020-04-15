@@ -17,10 +17,6 @@
 
 	<!-- jQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-	<!-- Slider -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-  	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 </head>
 <body>
 	<!-- Inicio Cabecera -->
@@ -42,48 +38,69 @@
 	</nav>
 	<!--Fin cabecera-->
 
+  <!--Inicio Sobre Mi-->
+  <div class="contenedor-about">
+    <div class="titulo-about">
+      <h2>Equipo de desarrollo</h2>
+    </div>
+
+    <div class="card">
+      <div class="img">
+        <img src="./img/fondo-principal.jpg">
+      </div>
+      <div class="top-text">
+        <div class="name">Brayan Ruiz</div>
+        <p>Web Developer</p>
+      </div>
+      <div class="bottom-text">
+        <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quaerat vel alias minima dolorem cupiditate ab. Adipisci nostrum, ipsam ullam.</div>
+        <div class="readMore">
+          <a href="#">Leer Mas</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="img">
+        <img src="./img/icono-colaborador.svg">
+      </div>
+      <div class="top-text">
+        <div class="name">Proximamente</div>
+        <p>DataBase Admin</p>
+      </div>
+      <div class="bottom-text">
+        <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quaerat vel alias minima dolorem cupiditate ab. Adipisci nostrum, ipsam ullam.</div>
+        <div class="readMore">
+          <a href="#">Leer Mas</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="img">
+        <img src="./img/icono-colaborador.svg">
+      </div>
+      <div class="top-text">
+        <div class="name">Proximamente</div>
+        <p>Mobile App Developer</p>
+      </div>
+      <div class="bottom-text">
+        <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quaerat vel alias minima dolorem cupiditate ab. Adipisci nostrum, ipsam ullam.</div>
+        <div class="readMore">
+          <a href="#">Leer Mas</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!--Fin Sobre Mi-->
+
 	<div class="boton-inicio">
 		<button class="switch" id="switch">
 			<span><i class="fas fa-sun"></i></span>
 			<span><i class="fas fa-moon"></i></span>
 		</button>
 	</div>
-
-	<!--Inicio caja typed-->
-	<section class="wrap">
-		<div class="typejs">
-			<h2 class="titulo animated fadeInRight delay-.5s"><span class="typed"></span> <span class="separator animated fadeInLeft delay-1s"></span> <br> DE PÁGINAS WEB</h2>
-		</div>
-	 <!--Fin caja typed-->
-
-	 <!--Inicio caja presentacion-->
-		<section id="fondo">
-			<div class="presentacion">
-				<div class="galeria">
-					<img src="./img/logo-presentacion.png">
-					<img src="./img/logo-presentacion5.png">
-					<img src="./img/logo-presentacion2.png">
-					<img src="./img/logo-presentacion6.png">
-					<img src="./img/logo-presentacion4.png">
-				</div>
-
-				<div id="texto-p">
-					<h2>¡ Bienvenido/a !</h2>
-					<span class="separator"></span>
-					<br>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan, nibh at molestie dictum, odio dolor interdum elit, sed pharetra nibh tellus ut lacus. Maecenas elementum ornare felis a dictum. Nunc sapien magna, condimentum nec luctus eget, facilisis at mi.</p>
-					<br>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus accumsan, nibh at molestie dictum.</p>
-					<br>
-					<span class="mano">
-						<i class="far fa-hand-point-right"></i>
-					</span>
-					<a href="#">ENFOQUES Y PRECIOS</a>
-				</div>
-			</div>
-		</section>
-		<!-- Fin caja presentacion -->
-	</section>
 
 	<div class="wrap">
 		<a href="#" class="scroll-top">
@@ -95,8 +112,6 @@
 		<p>&copy; Copyright 2020 - Desarrollado por Brayan Ruiz.</p>
 	</footer>
 
-
-	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-	<script type="text/javascript" src="./js/main.js"></script>
+  <script type="text/javascript" src="./js/about.js"></script>
 </body>
 </html>

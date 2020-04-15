@@ -69,6 +69,19 @@
 		margin-right: 10%;
 	}
 
+	/*SOBRE MI*/
+	.contenedor-about{
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+	.card{
+		max-width: 700px;
+		margin: 20px 0;
+	}
+	.card .img img{
+		width: auto;
+	}
+
 	/*CONTACTO*/
 	#contacto{
 		width: 36%;
@@ -128,7 +141,7 @@
 		position: fixed;
 		width: 36%;
 		height: 100vh;
-		background: #34495e;
+		background: #232426;
 		top: 80px;
 		left: -100%;
 		text-align: center;
@@ -368,6 +381,11 @@
 		line-height: 12px;
 	}
 
+	/*SOBRE MI*/
+	.card{
+		width: 297px;
+	}
+
 	/*PORTAFOLIO RESPONSIVE*/
 	.grid .item img{
 		min-height: 150px;
@@ -398,6 +416,14 @@
 		height: 15px;
 		margin-top: 15px;
 	}
+	/*SOBRE MI*/
+	/*SOBRE MI*/
+	.card{
+		margin-left: -30px;
+	}
+	.titulo-about{
+		margin-left: -20px;
+	}
 }
 
 @media (max-width: 360px){
@@ -410,6 +436,13 @@
 	#texto-p p{
 		font-size: 12px;
 		line-height: 10px;
+	}
+	/*SOBRE MI*/
+	.card{
+		margin-left: -47px;
+	}
+	.titulo-about{
+		margin-left: -40px;
 	}
 	/*CONTACTO*/
 	#sidebar #icono-email span{
