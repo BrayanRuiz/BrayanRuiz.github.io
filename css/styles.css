@@ -1,5 +1,12 @@
 :root{
 	--color-principal: #2D5465;
+	--morado-neon: rgb(167, 17, 208);
+	--verde-neon: #2ff40a;
+	--verde-claro: #6BD089;
+	--celeste-neon: #00ffff;
+	--celeste-claro: #60C5F1;
+	--naranja-claro: #e74c3c;
+	--morado: #C927CB;
 	--color-gris: #444;
 }
 
@@ -49,7 +56,7 @@ body.dark{
 /*CABECERA*/
 #menu{
 	height: 80px;
-	background: #2c3e50;
+	background: #131313;
 }
 
 #menu img{
@@ -74,30 +81,43 @@ body.dark{
 	margin: 0 15px;
 }
 
+#menu ul li:hover a{
+	color: var(--celeste-claro) !important;
+}
+
 #menu ul li a{
 	position: relative;
 	color: white;
 	font-size: 18px;
 	font-family: sans-serif;
 	padding: 5px 0;
+	transition: .4s;
 }
 
-#menu ul li a:before{
+#menu ul li a:after{
 	position: absolute;
 	content: '';
 	left: 0;
-	bottom: 0;
+	bottom: -5px;
 	height: 3px;
 	width: 100%;
-	background: white;
+	background: var(--verde-claro);
+	opacity: 0;
+	transition: all .2s linear;
+	/*
 	transform: scaleX(0);
 	transform-origin: right;
 	transition: transform .4s linear;
+	*/
 }
 
-#menu ul li a:hover:before{
+#menu ul li a:hover:after{
+	opacity: 1;
+	bottom: -2px;
+	/*
 	transform: scaleX(1);
 	transform-origin: left;
+	*/
 }
 
 label #btn,
@@ -109,6 +129,14 @@ label #cancel{
 	margin-right: 40px;
 	cursor: pointer;
 	display: none;
+}
+label #btn:hover{
+	color: var(--celeste-claro);
+	transition: .3s;
+}
+label #cancel:hover{
+	color: red;
+	transition: .3s;
 }
 
 #check{
@@ -146,7 +174,7 @@ body.dark .typejs{
 }
 
 body.dark .typejs h2{
-	color: black;
+	color: #131313;
 	transition: 400ms ease all;
 }
 
@@ -172,10 +200,6 @@ body.dark .separator{
 body.dark .typejs .teclado{
 	color: white;
 	transition: 400ms ease all;
-}
-.fondo-principal{
-	background: url("../img/fondo-principal.jpg");
-	opacity: .5;
 }
 
 .boton-inicio{
@@ -342,7 +366,7 @@ footer{
 .titulo-about{
 	text-align: center;
 	font-family: Arial;
-	color: #e74c3c;
+	color: var(--naranja-claro);
 	text-transform: uppercase;
 }
 .card{
@@ -358,6 +382,7 @@ footer{
 .card:hover{
 	height: auto;
 	box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+	transition: all .3s;
 }
 .card .img{
 	height: 200px;
@@ -377,7 +402,7 @@ footer{
 .card .top-text p{
 	font-size: 20px;
 	font-weight: 600;
-	color: #e74c3c;
+	color: var(--naranja-claro);
 	line-height: 20px;
 }
 .card .bottom-text{
@@ -391,6 +416,7 @@ footer{
 .card:hover .bottom-text{
 	opacity: 1;
 	visibility: visible;
+	transition: all .3s;
 }
 .card .bottom-text .text{
 	text-align: justify;
@@ -400,7 +426,7 @@ footer{
 	text-align: left;
 }
 .card .bottom-text .readMore a{
-	background: #e74c3c;
+	background: var(--naranja-claro);
 	color: #f2f2f2;
 	padding: 5px 8px;
 	border-radius: 3px;

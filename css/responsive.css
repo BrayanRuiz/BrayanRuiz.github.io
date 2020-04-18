@@ -1,4 +1,15 @@
 /* Index.html */
+:root{
+	--color-principal: #2D5465;
+	--morado-neon: rgb(167, 17, 208);
+	--verde-neon: #2ff40a;
+	--verde-claro: #6BD089;
+	--celeste-neon: #00ffff;
+	--celeste-claro: #60C5F1;
+	--naranja-claro: #e74c3c;
+	--morado: #C927CB;
+	--color-gris: #444;
+}
 
 @media (max-width: 1250px){
 	.wrap{
@@ -141,7 +152,7 @@
 		position: fixed;
 		width: 36%;
 		height: 100vh;
-		background: #232426;
+		background: #1B1B1B;
 		top: 80px;
 		left: -100%;
 		text-align: center;
@@ -161,9 +172,17 @@
 		margin: 25px 0;
 		line-height: 70px;
 	}
+	#menu ul li:hover{
+		border-radius: 5px;
+		box-shadow: inset 0 0 5px var(--verde-claro),
+							  inset	0 0 10px var(--verde-claro);
+		transition: .3s;
+	}
 	#menu ul li a{
 		font-size: 20px;
-		border-bottom: 1px solid rgba(255, 255, 255, .1);
+	}
+	#menu ul li a:hover:after{
+		opacity: 0;
 	}
 	#menu .lala{
 		display: inline-block;
