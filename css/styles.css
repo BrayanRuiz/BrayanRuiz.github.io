@@ -130,12 +130,9 @@ label #cancel{
 	cursor: pointer;
 	display: none;
 }
-label #btn:hover{
-	color: var(--celeste-claro);
-	transition: .3s;
-}
-label #cancel:hover{
-	color: red;
+
+label #cancel{
+	color: red !important;
 	transition: .3s;
 }
 
