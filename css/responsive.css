@@ -9,6 +9,7 @@
 	--naranja-claro: #e74c3c;
 	--morado: #C927CB;
 	--color-gris: #444;
+	--amarillo-claro: #FFD95C;
 }
 
 @media (max-width: 1250px){
@@ -174,8 +175,8 @@
 	}
 	#menu ul li:hover{
 		border-radius: 5px;
-		box-shadow: inset 0 0 5px var(--verde-claro),
-							  inset	0 0 10px var(--verde-claro);
+		box-shadow: inset 0 0 3px var(--amarillo-claro),
+							  inset	0 0 7px var(--amarillo-claro);
 		transition: .3s;
 	}
 	#menu ul li a{

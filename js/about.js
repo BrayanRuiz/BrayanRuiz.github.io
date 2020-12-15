@@ -22,17 +22,24 @@ if(localStorage.getItem('dark-mode') === 'true'){
 	btnSwitch.classList.remove('active-button');
 }
 
-// Menú desplegable
+// Boton scroll arriba
 $(document).ready(() => {
 
-	$('.scroll-top').click((e) => {
-		e.preventDefault();
+	$(window).scroll(function(){
 
-		$('html, body').animate({
-			scrollTop: 0
-		}, 500);
+		if($(window).scrollTop() > 200){
+			$('.scroll-top').css({
+				"opacity": "1", "pointer-events":"auto"
+			});
+		}else{
+			$('.scroll-top').css({
+				"opacity": "0", "pointer-events":"none"
+			});
+		}
 
-		return false;
+	});
+	$('.scroll-top').click(function(){
+		$('html').animate({scrollTop:0}, 500);
 	});
 
 });

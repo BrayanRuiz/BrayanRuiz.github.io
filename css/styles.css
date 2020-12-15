@@ -82,7 +82,7 @@ body.dark{
 }
 
 #menu ul li:hover a{
-	color: var(--celeste-claro) !important;
+	color: #ff3d00 !important;
 }
 
 #menu ul li a{
@@ -90,6 +90,7 @@ body.dark{
 	color: white;
 	font-size: 18px;
 	font-family: sans-serif;
+	font-weight: bold;
 	padding: 5px 0;
 	transition: .4s;
 }
@@ -101,7 +102,7 @@ body.dark{
 	bottom: -5px;
 	height: 3px;
 	width: 100%;
-	background: var(--verde-claro);
+	background: #FFD95C;
 	opacity: 0;
 	transition: all .2s linear;
 	/*
@@ -319,11 +320,11 @@ body.dark #texto-p a{
 
 .scroll-top{
 	position: fixed;
-	right: 25px;
+	right: 10px;
 	bottom: 25px;
-	width: 40px;
-	height: 40px;
-	line-height: 40px;
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
 	background: rgba(0, 0, 0, .4);
 	color: white;
 	font-size: 20px;
@@ -332,6 +333,9 @@ body.dark #texto-p a{
 	text-align: center;
 	z-index: 100;
 	box-sizing: content-box;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity .3s ease-in-out;
 }
 
 body.dark .scroll-top{
