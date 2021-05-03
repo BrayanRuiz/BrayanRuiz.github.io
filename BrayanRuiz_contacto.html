@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Brayan Javier Ruiz Navarro" />
+    <meta name="description" content="Evidencia 2" />
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="icon" type="favicon/x-icon" href="./Recursos/logo-principal.jpg"/>
+    <script src="https://kit.fontawesome.com/abdf98a5ec.js" crossorigin="anonymous"></script>
+    <title>Evidencia-2 Brayan Ruiz</title>
+  </head>
+  <body>
+    <!-- Inicio cabecera -->
+    <header>
+
+      <main>
+        <nav class="navbar">
+          <a class="listado" href="../index.html"><i class="fas fa-backward"></i> Listado Grupo 51</a>
+          <div class="content">
+            <div class="logo"><a href="BrayanRuiz_index.html">Restaurante Amakna</a></div>
+            <ul class="menu">
+              <div class="icon cancel-btn">
+                <i class="fas fa-times"></i>
+              </div>
+              <li><a href="BrayanRuiz_index.html"><i class="iconoM fas fa-home"></i> Inicio</a></li>
+              <li><a href="BrayanRuiz_menu.html"><i class="iconoM fas fa-utensils"></i> Menú y Precios</a></li>
+              <li><a href="BrayanRuiz_promo.html"><i class="iconoM fas fa-receipt"></i> Promociones</a></li>
+              <li><a href="BrayanRuiz_sucursales.html"><i class="iconoM fas fa-map-marked-alt"></i> Sucursales</a></li>
+              <li><a href="BrayanRuiz_contacto.html"><i class="iconoM fas fa-phone"></i> Contacto</a></li>
+            </ul>
+            <div class="icon menu-btn">
+              <i class="fas fa-bars"></i>
+            </div>
+          </div>
+        </nav>
+      </main>
+
+    </header>
+    <!--Fin cabecera-->
+
+    <div class="contenedor">
+      <div class="redes">
+        <a href="#">
+          <div class="layer">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="fab fa-facebook-f"></span>
+          </div>
+          <div class="redes-texto">Facebook</div>
+        </a>
+        <a href="#">
+          <div class="layer">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="fab fa-twitter"></span>
+          </div>
+          <div class="redes-texto">Twitter</div>
+        </a>
+        <a href="#">
+          <div class="layer">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="fab fa-instagram"></span>
+          </div>
+          <div class="redes-texto">Instagram</div>
+        </a>
+        <a href="#">
+          <div class="layer">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span class="fab fa-youtube"></span>
+          </div>
+          <div class="redes-texto">Youtube</div>
+        </a>
+      </div>
+
+      <form action="" method="POST" id="contacto">
+        <h2>CONTACTO</h2>
+        <label for="name">Nombre:</label>
+        <input type="text" name="name" data-validation="alphanumeric">
+
+        <br>
+        <label for="surname">Apellidos:</label>
+        <input type="text" name="surname" data-validation="alphanumeric">
+
+        <br>
+
+        <label>Email:</label>
+        <input type="email" name="email" data-validation="required email">
+
+        <br>
+        <label for="sex">Sexo:</label>
+
+        <select name="sex" data-validation="required">
+            <option value="men">Hombre</option>
+            <option value="woman">Mujer</option>
+        </select>
+
+        <br>
+        <label for="date">Fecha de Nacimiento:</label>
+        <input type="text" name="date" data-validation="date" data-validation-format="dd/mm/yyyy">
+
+        <br>
+        <label for="years">Edad:</label>
+        <input type="number" name="years" data-validation="required number">
+
+        <br>
+        <label for="text-area">Descripción del asunto:</label>
+        <br>
+        <textarea id="texto" cols="30" rows="10" data-validation="required alphanumeric"></textarea>
+
+        <br>
+        <input type="submit" value="Enviar">
+        <div class="clearfix"></div>
+      </form>
+
+      <hr>
+    </div>
+
+    <footer><address>- Amakna's Restaurant México. -</address> Todos los derechos reservados &copy; 2021.</footer>
+
+    <script type="text/javascript" src="./js/main.js"></script>
+
+  </body>
+</html>
